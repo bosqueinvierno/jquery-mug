@@ -5,14 +5,21 @@
 background-color: red;
 color: white;
 }
+.verde{
+background-color: green;
+color: white;
+}
+
 </style>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.js"></script>
 <script type="text/javascript">
 $(function(){
-	$("div:even").addClass("rojo").each(function(index, item){
-		$e = $(item);
-		var s = $e.html();
-		$e.html(s + " hola");
+	$("div").each(function(index, item){
+		var clase = "rojo";
+		if(index%2==0){
+			clase = "verde";
+		}
+		$(item).addClass(clase);
 	});
 });
 </script>
