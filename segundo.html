@@ -3,14 +3,17 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.js"></script>
 <script type="text/javascript">
 $(function(){
- var contenido = $("#container").html();
- console.log(contenido);
+	var a = document.getElementById("texto");
+	console.dir(a);
+	
+	var $a = $(a);
+	
+	console.dir($a);
+	
 });
 </script>
 </head>
 <body>
-<div id="container">
-	hola
-</div>
+<input type="text" id="texto" />
 </body>
 </html>
