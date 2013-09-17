@@ -4,9 +4,9 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.js"></script>
 <script type="text/javascript">
 $(function(){
-	$("input").bind("click", function(){
-		$(this).css("color","red");
-	});	
+	$("input").click(function(){
+		$(this).attr("value", "click");
+	});
 });
 </script>
 </head>
