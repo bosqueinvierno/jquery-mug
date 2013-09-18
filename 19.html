@@ -1,0 +1,27 @@
+<html>
+<head>
+<style type="text/css">
+
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(":button").click(function(){
+		var valor = $(":text").val();
+		var $el = $("<tr><td>" + valor + "</td></tr>");
+		
+		var tabla = $("table");
+		
+		$el.appendTo(tabla);
+		
+		$(":text").val("");
+	});
+});
+</script>
+</head>
+<body>
+<input type="button" value="agregar" />
+<input type="text" />
+<table></table>
+</body>
+</html>
