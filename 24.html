@@ -1,0 +1,27 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="./jquery-ui/css/ui-lightness/jquery-ui-1.10.3.custom.min.css" />
+<style type="text/css">
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="./jquery-ui/js/jquery-ui-1.10.3.custom.js"></script>
+
+<script type="text/javascript">
+
+$(function(){
+	$("#dialogo").dialog({autoOpen: false});
+		
+	$(":button").click(function(){
+		$("#dialogo").dialog("open");
+	});
+});
+</script>
+</head>
+<body>
+<input type="button" value="popup" />
+<div id="dialogo">
+<input type="button" value="cerrar" />
+hola qué tal?</div>
+</body>
+</html>
