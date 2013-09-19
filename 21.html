@@ -1,0 +1,41 @@
+<html>
+<head>
+<style type="text/css">
+
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.js"></script>
+<script type="text/javascript">
+$(function(){
+	var marcas = ["Ford", "Fiat", "BMW"];
+	var modelos = [
+		{marca: "Ford", modelo: "Focus"},
+		{marca: "Ford", modelo: "Ka"},
+		{marca: "Fiat", modelo: "Palio"}
+	];
+	
+	$.each(marcas, function(index, item){
+		$("#marca").append("<option value='" + item + "'>" + item + "</option>");
+	});
+	
+	$("#marca").change(function(){		
+		var marcaActual = $(this).val();
+		
+		$("#modelos").empty();
+		
+		$.each(modelos, function(index, item){
+			if(item.marca == marcaActual){
+				$("#modelos").append("<option value='" + item.modelo + "'>" + item.modelo + "</option>");
+			}
+		});	
+	});	
+	
+	$("#marca").change();
+});
+
+</script>
+</head>
+<body>
+<select id="marca" ></select>
+<select name="modelos" id="modelos"></select>
+</body>
+</html>
