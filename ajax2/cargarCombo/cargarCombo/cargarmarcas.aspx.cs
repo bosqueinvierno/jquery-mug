@@ -12,20 +12,14 @@ namespace cargarCombo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var marcas = new List<Marca>();
-            marcas.Add(new Marca { Id = "ford", nombre = "ford" });
-            marcas.Add(new Marca { Id = "renault", nombre = "renault" });
-            marcas.Add(new Marca { Id = "citroen", nombre = "citroen" });
-            marcas.Add(new Marca { Id = "peugeot", nombre = "peugeot" });
+            var marcas = new List<dynamic>();
+            marcas.Add(new { Id = "ford", nombre = "ford" });
+            marcas.Add(new { Id = "renault", nombre = "renault" });
+            marcas.Add(new {Id = "citroen", nombre = "citroen" });
+            marcas.Add(new { Id = "peugeot", nombre = "peugeot" });
 
             Response.ContentType = "application/json";
             Response.Write(new JavaScriptSerializer().Serialize(marcas));
         }
-    }
-
-    public class Marca
-    {
-        public string Id { get; set; }
-        public string nombre { get; set; }
     }
 }

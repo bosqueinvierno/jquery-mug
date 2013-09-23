@@ -10,6 +10,12 @@
                     $("#marca").append("<option value='" + this.Id + "'>" + this.nombre + "</option>");
                 });
             });
+
+            $("#marca").change(function () {
+                $.get("cargarmodelos.aspx", { marca: this.value }, function (data) {
+                       
+                });
+            });
         });
 
 
