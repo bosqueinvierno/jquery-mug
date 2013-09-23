@@ -2,6 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.get("cargarmarcas.aspx", function (data) {
+                $.each(data, function () {
+                    $("#marca").append("<option value='" + this.Id + "'>" + this.nombre + "</option>");
+                });
+            });
+        });
+
+
+    </script>
 </head>
 <body>
     <select id="marca">
