@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+        <title></title>
+    <script type="text/javascript" >
+        $(function () {
+
+            $("input").click(function () {
+                $.getJSON("http://localhost:65129/cargarmarcas.aspx?callback=?", function (data) {
+                    console.log(data);
+                });
+            });
+        });
+
+
+    </script>
+</head>
+<body>
+    <input type="button" value="test" />
+
+</body>
+</html>
