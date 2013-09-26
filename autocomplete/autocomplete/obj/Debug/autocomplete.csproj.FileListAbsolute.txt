@@ -1,0 +1,4 @@
+C:\Code\mug\jquery\jquery-mug\autocomplete\autocomplete\bin\autocomplete.dll
+C:\Code\mug\jquery\jquery-mug\autocomplete\autocomplete\bin\autocomplete.pdb
+C:\Code\mug\jquery\jquery-mug\autocomplete\autocomplete\obj\Debug\autocomplete.dll
+C:\Code\mug\jquery\jquery-mug\autocomplete\autocomplete\obj\Debug\autocomplete.pdb
